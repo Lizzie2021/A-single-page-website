@@ -1,0 +1,413 @@
+*,
+* ::after,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.5rem;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+label {
+  display: none;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+
+h3,
+em {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+header {
+  min-height: 100vh;
+  background-color: forestgreen;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 110px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+header nav {
+  width: 100vw;
+  background-color: white;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  opacity: 0.9;
+}
+
+img.logo {
+  width: 100px;
+  height: 100%;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+img.wcag {
+  margin: 0 2rem;
+}
+.list-icon img {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.nav-bar {
+  width: 100%;
+  padding-right: 2rem;
+}
+.nav-bar ul {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-bar a {
+  color: #000;
+  font-size: 14px;
+}
+
+.nav-bar a:hover {
+  color: forestgreen;
+}
+
+.banner {
+  height: 100%;
+  text-align: center;
+  padding-top: 110px;
+  color: white;
+}
+.banner h1 {
+  font-size: 60px;
+  margin-top: 0;
+  padding: 50px 0;
+  margin-top: 8rem;
+}
+
+.banner h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.banner a {
+  background-color: firebrick;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.banner a {
+  color: white;
+}
+.learn-more {
+  margin-top: 5rem;
+}
+.banner a:hover {
+  box-shadow: 0 6px 12px black;
+}
+
+#about {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.about-details {
+  height: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  margin: 0 4rem;
+}
+
+img.about-us {
+  width: 40vw;
+}
+
+#about h1 {
+  margin: 5rem;
+}
+#service {
+  background-color: forestgreen;
+  color: white;
+}
+
+#service h1 {
+  text-align: center;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1rem 1rem 5rem 1rem;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-item li {
+  list-style-type: square;
+}
+
+#testimonial {
+  background-color: aliceblue;
+}
+
+#testimonial h1 {
+  text-align: center;
+  margin: 5rem;
+}
+#testimonial h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.testimonial-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 0 2rem;
+}
+.testimonial-item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px black;
+  overflow: scroll;
+}
+
+#contact {
+  background-color: forestgreen;
+  color: white;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  column-gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+form {
+  height: 50%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+form input,
+textarea,
+button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+form .button-container {
+  margin: auto;
+}
+.button-container button {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button-container button:hover {
+  box-shadow: 0 6px 12px black;
+}
+
+.address-information {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address-information img {
+  width: 80%;
+}
+.address-information h3 {
+  margin: 1rem auto 0 0;
+}
+@media screen and (max-width: 850px) {
+  .contact-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner h1 {
+    font-size: 40px;
+    margin-top: 0;
+    padding: 50px 0;
+    margin-top: 8rem;
+  }
+
+  .banner h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  img.about-us {
+    width: 60vw;
+  }
+  .about-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 0 4rem;
+  }
+
+  #about h1 {
+    margin: 3rem;
+  }
+
+  .testimonial-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+  .testimonial-item {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner h1 {
+    font-size: 30px;
+    line-height: 2rem;
+  }
+
+  .banner h2 {
+    font-size: 16px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  a.list-icon img {
+    display: inline;
+    margin-right: 2rem;
+    width: 30px;
+  }
+
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    padding: 1rem 1rem 5rem 1rem;
+  }
+
+  .testimonial-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  #testimonial h1 {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .banner h2 {
+    line-height: 1.5rem;
+  }
+  .service-items {
+    display: block;
+  }
+  .testimonial-item {
+    width: 80%;
+    height: auto;
+  }
+}
